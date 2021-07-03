@@ -1,0 +1,45 @@
+section.msg {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  text-align:center;
+  margin: 5px 0 0 15%;
+  width: 70%;
+  height: auto;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  text-shadow: 2px 1px 2px #00000050;
+  animation-name: translater, opaciter;
+  animation-duration: calc(var(--animation-time) * 1s), calc(calc(var(--animation-time) * 1s) + 1s);
+  animation-timing-function: linear, ease;
+  animation-iteration-count: 1, 1;
+  animation-delay: 1s, 0.5s;
+  animation-fill-mode: forwards, forwards;
+}
+.error{
+  background-color: #ce0000f0;
+} 
+.warn{
+  background-color: #e98c18f0;
+} 
+.success{
+  background-color: #00a700f0;
+}
+.info{
+  background-color: #007dbbf0;
+} 
+
+@keyframes translater {
+  0%{ opacity: 100%;}
+  50%{ opacity: 100%;}
+  100%{ opacity: 0%;}
+}
+@keyframes opaciter {
+  0%{ transform: translateY(0); }
+  80%{ transform: translateY(0); }
+  100%{ transform: translateY(80px);}
+}
