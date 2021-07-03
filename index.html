@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/massage.css" />
+    <script src="js/massage.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/crypto.js" defer></script>
+    <!-- <script src="js/main.js" defer></script> -->
   </head>
   <body>
     <div class="main">
@@ -18,24 +23,57 @@
       <div class="search">
         <div class="input">
           <form action="#" method="post" id="my-data">
-            <input type="text" id="search-for" placeholder="What are you looking for?" autofocus autocomplete="off" />
+            <input type="text" id="search-for" placeholder="What are you looking for?" autocomplete="off" />
           </form>
         </div>
         <button class="img" type="submit" form="my-data">
           <img src="images/search.png" alt="search icon" />
         </button>
       </div>
+      <div class="option">
+        <div class="list" id="list"></div>
+      </div>
 
-      <div id="customCall"></div>
-
+      <div class="items hide" id="label-to-searched">
+        <p class="infomation">You searched for</p>
+      	<br>
+      	<div class="grid b">
+          <div> 
+          	<span>Ico</span>
+          </div> 
+          <div> 
+          	<span>Name</span>
+          </div>
+          <div> 
+            <span>Current Price USD</span>
+          </div>
+          <div>
+          	<span>Market Cap USD</span>
+          </div>
+        </div>
+        <div class="grid plus" id="display-searched"></div>
+      </div>
+      
       <div class="items">
-        <p class="info">Top 5 Cryptocurrency</p>
-        <ol id="cryptos"></ol>
+        <p class="infomation">Top 5 Cryptocurrency</p>
+      	<br>
+      	<div class="grid b">
+          <div> 
+          	<span>Ico</span>
+          </div> 
+          <div> 
+          	<span>Name</span>
+          </div>
+          <div> 
+            <span>Current Price USD</span>
+          </div>
+          <div>
+          	<span>Market Cap USD</span>
+          </div>
+        </div>
+        <div class="grid plus" id="display"></div>
       </div>
     </div>
-    <!-- <div class="attribution" >Icon made by <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">flaticon</a></div> -->
   </body>
   <script src="https://unpkg.com/axios@0.21.1/dist/axios.min.js"></script>
-  <script src="js/main.js" defer></script>
-  <script src="js/crypto.js" defer></script>
 </html>
